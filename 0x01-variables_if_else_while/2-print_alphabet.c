@@ -1,17 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - main entry
+ * main - Entry point
  * Description: This program prints the alphabets in lower case
  * Return: 0
  */
 int main (void)
 {
-	char alphabet;
-
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	char a = 'a'
+		
+	while (a <= 'z')
 	{
-		putchar(alphabet);
+		putchar(a);
+		a++;
 	}
+
 	put char('\n');
 	return (0)
 }
