@@ -1,31 +1,35 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: A program that prints all possible combinations
- * of a two digit number
+ * main - prints out all the numbers between 00 and 99
+ * with no two digits being the same
  * Return: 0
  */
 int main (void)
 {
-	int a, b;
+	int i, j;
 
-	for (a = 0; a<= 9; a++)
+	for (i = 48; i < 58; i++)
 	{
-		for (b = 0; b<= 9; b++)
+		for (j = i; j < 58; j++)
 		{
-			if (a < b)
+			if (i == j)
 			{
-				putchar(a + '0' );
-				putchar(b + '0' );
+				continue;
+			}
+			putchar(i);
+			putchar(j);
 
-				if (a != 8 || (a == 8 && b != 9))
+				if (i == 56 && j == 57)
+				{
+					break;
+				}
+				else
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
-	}
-	putchar('\n');
-	return (0);
+	 	putchar('\n');
+		return (0);
 }
