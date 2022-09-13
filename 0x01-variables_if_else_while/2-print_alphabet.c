@@ -3,12 +3,12 @@
 
 /**
  * main - Entry point
- * Description: This program prints the alphabets in lower case
+ *
  * Return: 0
  */
-int main (void)
+int main(void)
 {
-	char a = 'a'
+	char a = 'a';
 		
 	while (a <= 'z')
 	{
@@ -16,6 +16,6 @@ int main (void)
 		a++;
 	}
 
-	put char('\n');
-	return (0)
+	putchar('\n');
+	return (0);
 }
